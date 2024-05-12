@@ -1,18 +1,38 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## "firebaseプロジェクトの作成"
-https://console.firebase.google.comにアクセスして新しいプロジェクトを作成<br />
-→「Authentication」を有効化する<br />
-→「Sign-in method」のタブをクリックして「メール/パスワード」と「Google」の認証を有効する<br />
+### "firebaseプロジェクトの作成"
+- https://console.firebase.google.comにアクセスして新しいプロジェクトを作成する。  
+  →「Authentication」を有効化する<br />
+  →「Sign-in method」のタブをクリックして「メール/パスワード」と「Google」の認証を有効する。  
+  →
+- Webアプリのコンソール画面の歯車マークを押して、プロジェクトの設定からアプリのconfigをメモしておく。  
+  // Your web app's Firebase configuration  
+  const firebaseConfig = {  
+    apiKey: "XXXXXXXXX",  
+    authDomain: "XXXXXXXXX",  
+    projectId: "XXXXXXXXX",  
+    storageBucket: "XXXXXXXXX",  
+    messagingSenderId: "XXXXXXXXX",  
+    appId: "XXXXXXXXX"  
+  };
 
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### "React環境におけるdeploy"
+- 自身の開発環境にfirebase SDKをインストールする
+    `npm install firebase`
+- 事前準備：アプリを作成してワークするか確認する
+   `npm create vite@latest <sample-app> -- --template react-ts　　
+    cd <sample-app>  　
+    npm install　　
+    npm run dev`
+  ➜  Local:   http://127.0.0.1:5174/　　
+  ➜  Network: use --host to expose
+  にアクセスして初期画面の確認をして、Ctrl+Cで停止する
+  ディレクトリは消去して構わない
+- 
+- アプリのページ構成のために以下のコマンドを実行する
+   `npm install react-router-dom firebase `
+  
+  
 
 ### `yarn test`
 
