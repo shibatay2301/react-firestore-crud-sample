@@ -43,21 +43,27 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   REACT_APP_FIREBASE_SENDER_ID=<messagingSenderId>  
 -  連携するアプリをbuildファイルにまとめる  
   `npm run build`  
--  firebaseとReactのwebアプリの連携を行う 
-  `firebase init`
- →featureの選択は、spaceキーでHostingを選択
+-  firebaseとReactのwebアプリの連携を行う  
+  `firebase init`  
+   →featureの選択は、spaceキーでHostingを選択  
+    ? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices.  
+     (Press <space> to select, <a> to toggle all, <i> to invert selection, and <enter> to proceed)  
+    ❯◯ Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+  
+   →build、singleページではない、github連携なしで進める  
+    ? What do you want to use as your public directory? build  
+    ? Configure as a single-page app (rewrite all urls to /index.html)? No  
+    ? Set up automatic builds and deploys with GitHub? No  
+- deployしてwebアプリにする  
+  `firebase deploy`  
+   
+      ✔  firebase deploy  
+     
+      ✔  Deploy complete!  
+    
+    Project Console: https://console.firebase.google.com/project/myapp0304/overview  
+    Hosting URL: https://<app0304.web.app>  
 
-  ? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices.  
-   (Press <space> to select, <a> to toggle all, <i> to invert selection, and <enter> to proceed)  
-  ❯◯ Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
-
- →build、singleページではない、github連携なしで進める  
-  ? What do you want to use as your public directory? build  
-  ? Configure as a single-page app (rewrite all urls to /index.html)? No  
-  ? Set up automatic builds and deploys with GitHub? No  
-
-
-
+### reference
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
 To learn React, check out the [React documentation](https://reactjs.org/).
