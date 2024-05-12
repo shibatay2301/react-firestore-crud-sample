@@ -18,20 +18,32 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### "React環境におけるdeploy"
 - 自身の開発環境にfirebase SDKをインストールする
-    `npm install firebase`
+  `npm install firebase`
 - 事前準備：アプリを作成してワークするか確認する
-   `npm create vite@latest <sample-app> -- --template react-ts　　
+  `npm create vite@latest <react-firestore-crud-sample
+> -- --template react-ts　　
     cd <sample-app>  　
     npm install　　
     npm run dev`
   ➜  Local:   http://127.0.0.1:5174/　　
-  ➜  Network: use --host to expose
-  にアクセスして初期画面の確認をして、Ctrl+Cで停止する
-  ディレクトリは消去して構わない
-- 
-- アプリのページ構成のために以下のコマンドを実行する
-   `npm install react-router-dom firebase `
+  ➜  Network: use --host to expose  
+  にアクセスして初期画面の確認をして、Ctrl+Cで停止する  
+  ディレクトリは消去して構わない  
+- githubの現在のファイルをダウンロードして、ルートディレクトリ内に移動する  
+- アプリのページ構成のために以下のコマンドを実行する  
+  `cd react-firestore-crud-sample`  
+  `npm install react-router-dom firebase `  
+- firebaseで作成したアプリのconfig情報を.env内に記載しておく。<>内は各アプリの情報に書き換える  
+  `touch .env`
+    // .env  
+  REACT_APP_FIREBASE_KEY=<apiKey>  
+  REACT_APP_FIREBASE_DOMAIN=<authDomain>  
+  REACT_APP_FIREBASE_DATABASE=<databaseURL>  
+  REACT_APP_FIREBASE_PROJECT_ID=<projectId>  
+  REACT_APP_FIREBASE_STORAGE_BUCKET=<storageBucket>  
+  REACT_APP_FIREBASE_SENDER_ID=<messagingSenderId>
   
+    
   
 
 ### `yarn test`
