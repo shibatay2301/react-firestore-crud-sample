@@ -4,7 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - https://console.firebase.google.comにアクセスして新しいプロジェクトを作成する。  
   →「Authentication」を有効化する<br />
   →「Sign-in method」のタブをクリックして「メール/パスワード」と「Google」の認証を有効する。  
-  →
 - Webアプリのコンソール画面の歯車マークを押して、プロジェクトの設定からアプリのconfigをメモしておく。  
   // Your web app's Firebase configuration  
   const firebaseConfig = {  
@@ -29,7 +28,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
       npm install
   
       npm run dev  
-  ➜  Local:   http://127.0.0.1:5174/　　
+  ➜  Local:   http://127.0.0.1:5174/  
   ➜  Network: use --host to expose  
   にアクセスして初期画面の確認をして、Ctrl+Cで停止する  
   ディレクトリは消去して構わない  
