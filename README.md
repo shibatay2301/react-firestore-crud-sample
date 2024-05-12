@@ -46,9 +46,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 -  firebaseとReactのwebアプリの連携を行う 
   `firebase init`
  →featureの選択は、spaceキーでHostingを選択
+
   ? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices.  
    (Press <space> to select, <a> to toggle all, <i> to invert selection, and <enter> to proceed)  
-  ❯◯ Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys  
+  ❯◯ Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+
  →build、singleページではない、github連携なしで進める  
   ? What do you want to use as your public directory? build  
   ? Configure as a single-page app (rewrite all urls to /index.html)? No  
