@@ -34,14 +34,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   `cd react-firestore-crud-sample`  
   `npm install react-router-dom firebase `  
 - firebaseで作成したアプリのconfig情報を.env内に記載しておく。<>内は各アプリの情報に書き換える  
-  `touch .env`
-    // .env  
+  `touch .env`  
+  `   // .env  
   REACT_APP_FIREBASE_KEY=<apiKey>  
   REACT_APP_FIREBASE_DOMAIN=<authDomain>  
   REACT_APP_FIREBASE_DATABASE=<databaseURL>  
   REACT_APP_FIREBASE_PROJECT_ID=<projectId>  
   REACT_APP_FIREBASE_STORAGE_BUCKET=<storageBucket>  
-  REACT_APP_FIREBASE_SENDER_ID=<messagingSenderId>
+  REACT_APP_FIREBASE_SENDER_ID=<messagingSenderId>`
   
     
   
