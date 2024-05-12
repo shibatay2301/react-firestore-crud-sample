@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## "firebaseプロジェクトの作成"
-https://console.firebase.google.comにアクセスして新しいプロジェクトを作成
-→「Authentication」を有効化する
-→「Sign-in method」のタブをクリックして「メール/パスワード」と「Google」の認証を有効する
+https://console.firebase.google.comにアクセスして新しいプロジェクトを作成/
+→「Authentication」を有効化する/
+→「Sign-in method」のタブをクリックして「メール/パスワード」と「Google」の認証を有効する/
 
 
 ### `yarn start`
