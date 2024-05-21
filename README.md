@@ -1,5 +1,26 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Filetree
+
+### File tree
+
+<pre>
+.<root directory>
+├── README.md //[create react appのREADMEを含む](https://github.com/facebook/create-react-app)
+├── build //実質的なアプリのページ構成や機能をまとめたもの、本アプリではfirebaseのコンパイル先として使用
+├── firebase.json //firebaseにおけるHostingの規約を記載
+├── node_modules //npmライブラリ
+├── package-lock.json
+├── package.json
+├── public //一般的にはこのディレクトリをコンパイルする
+├── src //作業ディレクトリであり、実質的なアプリのページ構成や機能をまとめたもの
+├── tsconfig.json
+└── yarn.lock
+</pre>
+
+
+## 手順書
+
 ### "firebaseプロジェクトの作成"
 - https://console.firebase.google.comにアクセスして新しいプロジェクトを作成する。  
   →「Authentication」を有効化する<br />
