@@ -4,16 +4,24 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <pre>
 .root directory
-├── README.md     //facebook公式のcreate react appのREADMEを含む
-├── build         //実質的なアプリのページ構成や機能をまとめたもの、本アプリではfirebaseのコンパイル先として使用。テスト環境の中間ファイルとして作成される。Create React Appを使用した場合はBuildが作られる。
-├── firebase.json //firebaseにおけるHostingの規約を記載
-├── node_modules  //npmライブラリ
-├── package-lock.json
-├── package.json
-├── public        //一般的にはこのディレクトリをコンパイルする
-├── src           //作業ディレクトリであり、実質的なアプリのページ構成や機能をまとめたもの
-├── tsconfig.json
-└── yarn.lock
+├── README.md         //facebook公式のcreate react appのREADMEを含む
+├── build             //実質的なアプリのページ構成や機能をまとめたもの、本アプリではfirebaseのコンパイル先として使用。reate React Appを使用した場合はBuildが作られる。
+├── firebase.json     //firebaseにおけるHostingの規約を記載
+├── node_modules      //npmライブラリの保管ディレクトリ。プロジェクトが依存する npmパッケージが格納される
+├── package-lock.json //プロジェクトの依存関係を固定するためのファイルでパッケージのバージョンに制限をかける
+├── package.json      //プロジェクトのパッケージのバージョンを記載したjsonファイル
+├── public            //デフォルトのReactをダウンロードしたときに作られるファイル。一般的にはこのディレクトリをコンパイルする
+├── src               //作業ディレクトリであり、実質的なアプリのページ構成や機能をまとめたもの
+│ ├── App.css         //メインコンポーネントのスタイルシート
+│ ├── App.tsx         //メインコンポーネントの記載ファイル。firebaseとの連携やページ機能について記載されている
+│ ├── assets          //画像ファイルなどを保管しておくディレクトリ
+│ │   └── react.svg   //Reactの画像、デフォルトではReactのマークが入っている
+│ ├── firebaseApp.tsx //firebaseアプリの初期化とfirestoreへの接続を設定。.envからAPI接続の設定ファイルを呼び出す。
+│ ├── index.css       //グローバルスタイルシート
+│ ├── main.tsx        //一般的にはこのディレクトリをコンパイルする
+│ └── vite-env.d.ts   //一般的にはこのディレクトリをコンパイルする
+├── tsconfig.json     //Typescriptの設定ファイル
+└── yarn.lock         //yarnを使用した時のプロジェクトの依存関係を固定するためのファイル。npmを使用している場合は必須ではない。
 </pre>
 
 
@@ -61,14 +69,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
       npm install react-router-dom firebase   
 - firebaseで作成したアプリのconfig情報を.env内に記載しておく。<>内は各アプリの情報に書き換える
 
-      touch .env  
-     // .env  
-  REACT_APP_FIREBASE_KEY=<apiKey>  
-  REACT_APP_FIREBASE_DOMAIN=<authDomain>  
-  REACT_APP_FIREBASE_DATABASE=<databaseURL>  
-  REACT_APP_FIREBASE_PROJECT_ID=<projectId>  
-  REACT_APP_FIREBASE_STORAGE_BUCKET=<storageBucket>  
-  REACT_APP_FIREBASE_SENDER_ID=<messagingSenderId>  
+         // .env  
+      REACT_APP_FIREBASE_KEY=<apiKey>  
+      REACT_APP_FIREBASE_DOMAIN=<authDomain>  
+      REACT_APP_FIREBASE_DATABASE=<databaseURL>  
+      REACT_APP_FIREBASE_PROJECT_ID=<projectId>  
+      REACT_APP_FIREBASE_STORAGE_BUCKET=<storageBucket>  
+      REACT_APP_FIREBASE_SENDER_ID=<messagingSenderId>  
 -  連携するアプリをbuildファイルにまとめる
 
         npm run build  
