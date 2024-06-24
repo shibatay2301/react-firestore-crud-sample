@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <pre>
 .root directory
 ├── README.md     //facebook公式のcreate react appのREADMEを含む
-├── build         //実質的なアプリのページ構成や機能をまとめたもの、本アプリではfirebaseのコンパイル先として使用
+├── build         //実質的なアプリのページ構成や機能をまとめたもの、本アプリではfirebaseのコンパイル先として使用。テスト環境の中間ファイルとして作成される。Create React Appを使用した場合はBuildが作られる。
 ├── firebase.json //firebaseにおけるHostingの規約を記載
 ├── node_modules  //npmライブラリ
 ├── package-lock.json
