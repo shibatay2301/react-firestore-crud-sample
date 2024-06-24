@@ -23,7 +23,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - https://console.firebase.google.comにアクセスして新しいプロジェクトを作成する。  
   →「Authentication」を有効化する<br />
   →「Sign-in method」のタブをクリックして「メール/パスワード」と「Google」の認証を有効する。  
-- Webアプリのコンソール画面の歯車マークを押して、プロジェクトの設定からアプリのconfigをメモしておく。  
+- Webアプリのコンソール画面の歯車マークを押して、プロジェクトの設定からアプリのconfigをメモしておく。
+  <pre>
   // Your web app's Firebase configuration  
   const firebaseConfig = {  
     apiKey: "XXXXXXXXX",  
@@ -33,7 +34,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     messagingSenderId: "XXXXXXXXX",  
     appId: "XXXXXXXXX"  
   };
-
+  </pre>
+  
 ### "React環境におけるdeploy"
 - 自身の開発環境にfirebase SDKをインストールする
 
@@ -92,7 +94,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     Hosting URL: https://<app0304.web.app>  
 
 ### "reference"
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).<br>
+To learn React, check out the [React documentation](https://reactjs.org/).<br>
 [参考サイト](https://zenn.dev/takanari_dev/articles/2024-01-29-firebase-web-app)
 
