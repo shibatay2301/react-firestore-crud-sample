@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-# firebase authenticationの確認と複数ページの表示確認アプリ
+# firebase authenticationの確認と複数ページの表示確認Reactアプリ
 ## File tree
 
 <pre>
