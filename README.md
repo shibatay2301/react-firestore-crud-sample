@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <pre>
 .root directory
 ├── README.md         //facebook公式のcreate react appのREADMEを含む
-├── build             //実質的なアプリのページ構成や機能をまとめたもの、本アプリではfirebaseのコンパイル先として使用。reate React Appを使用した場合はBuildが作られる。
+├── build             //実質的なアプリのページ構成や機能をまとめたもの、本アプリではfirebaseのコンパイル先として使用。reate React Appを使用した場合はBuildが作られる
 ├── firebase.json     //firebaseにおけるHostingの規約を記載
 ├── node_modules      //npmライブラリの保管ディレクトリ。プロジェクトが依存する npmパッケージが格納される
 ├── package-lock.json //プロジェクトの依存関係を固定するためのファイルでパッケージのバージョンに制限をかける
@@ -16,12 +16,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 │ ├── App.tsx         //メインコンポーネントの記載ファイル。firebaseとの連携やページ機能について記載されている
 │ ├── assets          //画像ファイルなどを保管しておくディレクトリ
 │ │   └── react.svg   //Reactの画像、デフォルトではReactのマークが入っている
-│ ├── firebaseApp.tsx //firebaseアプリの初期化とfirestoreへの接続を設定。.envからAPI接続の設定ファイルを呼び出す。
+│ ├── firebaseApp.tsx //firebaseアプリの初期化とfirestoreへの接続を設定。.envからAPI接続の設定ファイルを呼び出す
 │ ├── index.css       //グローバルスタイルシート
-│ ├── main.tsx        //一般的にはこのディレクトリをコンパイルする
-│ └── vite-env.d.ts   //一般的にはこのディレクトリをコンパイルする
+│ ├── main.tsx        //エントリーポイントとして表示されるファイル。複数ページの場合はrootと表示され、Appの機能などを呼び出す
+│ └── vite-env.d.ts   //Vite用のTypeScript環境設定ファイル
 ├── tsconfig.json     //Typescriptの設定ファイル
-└── yarn.lock         //yarnを使用した時のプロジェクトの依存関係を固定するためのファイル。npmを使用している場合は必須ではない。
+└── yarn.lock         //yarnを使用した時のプロジェクトの依存関係を固定するためのファイル。npmを使用している場合は必須ではない
 </pre>
 
 
