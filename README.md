@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-# firebase authenticationの確認と複数ページの表示確認Reactアプリ
+# cloud firestoreの操作を行うReactアプリ
 ## File tree
 
 <pre>
@@ -11,17 +11,33 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ├── package-lock.json //プロジェクトの依存関係を固定するためのファイルでパッケージのバージョンに制限をかける
 ├── package.json      //プロジェクトのパッケージのバージョンを記載したjsonファイル
 ├── public            //デフォルトのReactをダウンロードしたときに作られるファイル。一般的にはこのディレクトリをコンパイルする
-├── src               //作業ディレクトリであり、実質的なアプリのページ構成や機能をまとめたもの
-│ ├── App.css         //メインコンポーネントのスタイルシート
-│ ├── App.tsx         //メインコンポーネントの記載ファイル。firebaseとの連携やページ機能について記載されている
-│ ├── assets          //画像ファイルなどを保管しておくディレクトリ
-│ │   └── react.svg   //Reactの画像、デフォルトではReactのマークが入っている
-│ ├── firebaseApp.tsx //firebaseアプリの初期化とfirestoreへの接続を設定。.envからAPI接続の設定ファイルを呼び出す
-│ ├── index.css       //グローバルスタイルシート
-│ ├── main.tsx        //エントリーポイントとして表示されるファイル。複数ページの場合はrootと表示され、Appの機能などを呼び出す
-│ └── vite-env.d.ts   //Vite用のTypeScript環境設定ファイル
-├── tsconfig.json     //Typescriptの設定ファイル
-└── yarn.lock         //yarnを使用した時のプロジェクトの依存関係を固定するためのファイル。npmを使用している場合は必須ではない
+├── src                 //作業ディレクトリであり、実質的なアプリのページ構成や機能をまとめたもの
+│ ├── App.css           //メインコンポーネントのスタイルシート
+│ ├── App.test.tsx      //App.tsxのコンポーネントのUIテストをするファイル。React testing liblaryを使用する
+│ ├── App.tsx           //メインコンポーネントの記載ファイル。firebaseとの連携やページ機能について記載されている
+│ ├── PrivateRoute.tsx  //ログインした時の認証ユーザーと非認証ユーザーを分けるコンポーネント
+│ ├── components        //
+│ │ ├── CreateMemo.tsx  //
+│ │ ├── LoginWithEmail.tsx  //
+│ │ ├── LoginWithGoogle.tsx  //
+│ │ ├── MemoList.tsx  //
+│ │ ├── SignupWithEmail.tsx  //
+│ │ └── UpdateDeleteMemo.tsx  //
+│ ├── consts.ts         //アプリケーション全体で使用する定数を定義するファイル。APIのエンドポイントや固定の文字列、色などの定数を指定。
+│ ├── contexts.ts       //ReactのコンテキストAPIを使用してグローバルな状態を管理するファイル。例えば、ユーザー情報やテーマ設定などのコンテキストが定義
+│ ├── firebase.tsx      //firebaseアプリの初期化とfirestoreへの接続を設定。.envからAPI接続の設定ファイルを呼び出す
+│ ├── index.css         //グローバルスタイルシート
+│ ├── index.tsx         //アプリケーションのエントリーポイント。ReactDOM を使用して App コンポーネントを HTML のルート要素にマウント
+│ ├── logo.svg          //アプリケーションで使用するロゴ画像
+│ ├── models.ts         //アプリケーションで使用する TypeScript 型定義を含むファイル
+│ ├── pages             //アプリケーションのページコンポーネントを格納するディレクトリ
+│ ├── paths.ts          //アプリケーションのルーティングパスを定義するファイル
+│ ├── react-app-env.d.ts //TypeScript 用の環境変数定義ファイル。Create React App によって生成される設定ファイル
+│ ├── reportWebVitals.ts //ウェブバイタルのパフォーマンス計測を行うファイル。
+│ ├── serviceWorker.ts   //サービスワーカーの登録と設定を行うファイル
+│ └── setupTests.ts      //テスト環境のセットアップを行うファイル
+├── tsconfig.json        //Typescriptの設定ファイル
+└── yarn.lock            //yarnを使用した時のプロジェクトの依存関係を固定するためのファイル。npmを使用している場合は必須ではない
 </pre>
 
 
