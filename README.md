@@ -16,13 +16,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 │ ├── App.test.tsx      //App.tsxのコンポーネントのUIテストをするファイル。React testing liblaryを使用する
 │ ├── App.tsx           //メインコンポーネントの記載ファイル。firebaseとの連携やページ機能について記載されている
 │ ├── PrivateRoute.tsx  //ログインした時の認証ユーザーと非認証ユーザーを分けるコンポーネント
-│ ├── components        //
-│ │ ├── CreateMemo.tsx  //
-│ │ ├── LoginWithEmail.tsx  //
-│ │ ├── LoginWithGoogle.tsx  //
-│ │ ├── MemoList.tsx  //
-│ │ ├── SignupWithEmail.tsx  //
-│ │ └── UpdateDeleteMemo.tsx  //
+│ ├── components        //各ページにある機能を記載したディレクトリ
+│ │ ├── CreateMemo.tsx         //メモ作成のスクリプトをまとめたファイル。firestore接続してメモの作成を行う
+│ │ ├── LoginWithEmail.tsx     //firebase authに接続してEmailのログイン認証を行う
+│ │ ├── LoginWithGoogle.tsx    //firebase authに接続してgmailによるログイン認証を行う
+│ │ ├── MemoList.tsx           //firestore接続してメモリストの読み込みを行う
+│ │ ├── SignupWithEmail.tsx    //firebase authに接続してEmailのサインアップユーザー登録を行う
+│ │ └── UpdateDeleteMemo.tsx   //firestore接続してメモリストの編集を行う
 │ ├── consts.ts         //アプリケーション全体で使用する定数を定義するファイル。APIのエンドポイントや固定の文字列、色などの定数を指定。
 │ ├── contexts.ts       //ReactのコンテキストAPIを使用してグローバルな状態を管理するファイル。例えば、ユーザー情報やテーマ設定などのコンテキストが定義
 │ ├── firebase.tsx      //firebaseアプリの初期化とfirestoreへの接続を設定。.envからAPI接続の設定ファイルを呼び出す
